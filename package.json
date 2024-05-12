@@ -1,0 +1,49 @@
+{
+  "name": "anon-chat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9001",
+    "devSocket": "node -r \"@swc-node/register\" --watch server",
+    "build": "next build",
+    "buildSocket": "rimraf build & tsc -p server/tsconfig.json",
+    "start": "next start -p 9001 & node build/socket/server",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/env": "^14.2.3",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-scroll-area": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.378.0",
+    "moment": "^2.30.1",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-spinners": "^0.13.8",
+    "sharp": "^0.33.3",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "socket.io-msgpack-parser": "^3.0.2",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.9.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8",
+    "rimraf": "^5.0.6",
+    "sass": "^1.77.0",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}

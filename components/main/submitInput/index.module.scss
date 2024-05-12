@@ -1,0 +1,9 @@
+.submitInput {
+  background-image: url("/mesaj.png");
+
+  @apply text-gray-500 placeholder-gray-600;
+
+  &:hover, &:focus {
+    @apply text-gray-400 placeholder-gray-400;
+  }
+}

@@ -1,0 +1,18 @@
+.tab {
+  background-color: #222;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    @apply text-gray-200;
+    background-color: #214358;
+  }
+}
+
+.active {
+  background-color: #214358;
+  cursor: default;
+}
+
+.isNew {
+  @apply bg-red-900
+}
